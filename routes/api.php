@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MarcaController;
+use App\Http\Controllers\ModeloController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('marca', MarcaController::class);
+Route::apiResource('modelo', ModeloController::class);
